@@ -1,0 +1,90 @@
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="sign.css" rel="stylesheet" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cadastro de Currículo - RedeFlex</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="signin_wrapper">
+    <form action="/Dev/Create" enctype="multipart/form-data" id="formMain" method="post">            <div id="top">
+                    <img src="logomarca.png" />
+                </div>
+                <div id="bot">
+                    <div id="titulo">
+                        <h3> Trabalhe Conosco! </h3>
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Nome" data-valmsg-replace="true"></span>
+                    </div>
+                    <label for="nome-candidato" class="active">
+                        Seu nome:
+                        <input type="text" name="Nome" placeholder="Digite seu nome aqui" id="nome-candidato" />
+                    </label>
+                    <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                    <label for="email-candidato" class="active">
+                        Seu email:
+                        <input type="text" name="Email" placeholder="Digite seu e-mail aqui" id="email-candidato" />
+                    </label>
+                    <span class="field-validation-valid text-danger" data-valmsg-for="Curriculo" data-valmsg-replace="true"></span>
+                    <div class="input-file-container">
+                        <input class="input-file" id="my-file" name="Curriculo" type="file">
+                        <label tabindex="0" for="my-file" class="input-file-trigger">Anexe seu currículo</label>
+                    </div>
+                    <input type="submit" class="" value="Enviar">
+                </div>
+    </form>    </div>
+    
+    </body>
+    
+    </html>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.js"></script>
+    <script>
+        document.querySelector("html").classList.add('js');
+    
+        var fileInput = document.querySelector(".input-file"),
+            button = document.querySelector(".input-file-trigger"),
+            the_return = document.querySelector(".file-return");
+    
+        button.addEventListener("keydown", function (event) {
+            if (event.keyCode == 13 || event.keyCode == 32) {
+                fileInput.focus();
+            }
+        });
+        button.addEventListener("click", function (event) {
+            fileInput.focus();
+            return false;
+        });
+    </script>
+    <script>
+        $(function () {
+    
+            if (false)
+            {
+                Swal.fire(
+                    'Oops...',
+                   "Houve problemas com seu arquivo!",
+                   'error'
+                )
+            }
+        });
+    
+        $('#formMain').submit(function (event) {
+            if ($('#nome-candidato').val() && $('#email-candidato').val() && $('#inputCurriculo').val()) {
+                Swal.fire(
+                    'Currículo enviado com successo!',
+                    'Agora é só aguardar nosso contato!',
+                    'success'
+                )
+            }
+        })
+    
+    </script>
