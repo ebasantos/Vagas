@@ -505,6 +505,8 @@ form {
 }
 
 @media (min-width: 100px) and (max-width: 320px) {
+
+
     form {
         height: 484px;
         width: calc(270px + 5vw);
@@ -516,6 +518,10 @@ form {
 }
 
 @media (min-width:350px) and (max-width: 490px) {
+    .js .input-file-trigger {
+        height: 25px;
+    }
+    
     form {
         height: 428px;
         width: calc(329px + 5vw);
