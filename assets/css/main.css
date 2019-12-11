@@ -2,6 +2,10 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Signika:300,700");
 
+
+
+
+
 /*
 	Broadcast by TEMPLATED
 	templated.co @templatedco
@@ -85,6 +89,10 @@ nav{
 
 	.container.\32 5\25 {
 		width: 20em;
+	}
+
+	a{
+		color: black ;
 	}
 
 	.container {
@@ -220,6 +228,25 @@ nav{
 		}
 
 	}
+
+	.descript {
+		background-color: white;
+		border-radius: 20px;
+		margin-bottom: 45px;
+		border: #f75e5c 2px solid;
+		padding-top: 16px !important;
+		padding-left: 24px !important;
+		margin-bottom: 45px !important;
+		display: flex;
+		width: 80%;
+		align-items: stretch;
+		flex-flow: row wrap;
+	}
+
+	.video p {
+		color: black ;
+	}
+
 
 /* Grid */
 
@@ -1572,11 +1599,10 @@ nav{
 
 	}
 
-	#main{
-		background-image: url('../../images/lockFlex.png');
+	body {
+		/* background-image: url('../../images/back3.jpg'); */
 		background-position: center;
-		/* background-size: 2491px 1723px !important; */
-		background-size: 2800px  1557px !important;
+		background-size: 3091px 2523px !important;
 		background-repeat: no-repeat;
 		-webkit-background-size: cover;
   		-moz-background-size: cover;
@@ -1598,13 +1624,18 @@ nav{
 /* Type */
 
 	body, input, select, textarea {
-		font-family: "Signika", sans-serif;
+		font-family: 'Exo', sans-serif;
 		font-size: 13pt;
 		font-weight: 300;
 		line-height: 1.65;
 	}
 
 		@media screen and (max-width: 1680px) {
+
+			#logo {
+				height: 228px !important;
+			}
+
 
 			body, input, select, textarea {
 				font-size: 11pt;
@@ -1613,6 +1644,11 @@ nav{
 		}
 
 		@media screen and (max-width: 1280px) {
+
+			#logo {
+				height: 282px !important;
+			}
+
 
 			body, input, select, textarea {
 				font-size: 11pt;
@@ -1661,7 +1697,7 @@ nav{
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 0.8em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1808,7 +1844,7 @@ nav{
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #93302b;
+		color: #4d110d;
 	}
 
 	blockquote {
@@ -2081,7 +2117,7 @@ nav{
 			}
 
 			.flex.flex-tabs .tabs {
-				width: 77%;
+				/* width: 77%; */
 			}
 
 		@media screen and (max-width: 980px) {
@@ -2855,7 +2891,7 @@ nav{
 			}
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
-				color: #93302b;
+				color: #4d110d;
 			}
 
 			.wrapper.style1 blockquote {
@@ -3284,8 +3320,7 @@ nav{
 /* Video */
 
 	.video {
-		background:  #f75e5c;
-		border-radius: 4px;
+		border-radius: 5px;
 		margin: 0 0 2em 0;
 		overflow: hidden;
 		position: relative;
@@ -3350,7 +3385,7 @@ nav{
 
 		.video .caption {
 			font-weight: bold !important;
-			color: white;
+			color: #93302b;
 			padding: 1.5em;
 			font-size: 1.0em;
 			font-weight: 100;
@@ -3459,6 +3494,32 @@ nav{
 
 			@media screen and (max-width: 736px) {
 
+				.video {
+					border-radius: 15px;
+				}
+
+				.video .col{
+					border-radius: 15px;
+				}
+			
+				.videos .image{
+					background:  #f75e5c !important;
+				}
+		
+				.videos p{
+					background:  #f75e5c !important;
+				}
+		
+				.descript {
+					padding-top: 16px !important;
+					padding-left: 0 !important;
+					margin-bottom: 45px !important;
+					display: flex;
+					width: 100%;
+					align-items: stretch;
+					flex-flow: row wrap;
+				}
+
 				#header > a {
 					padding: 0 0.5em;
 				}
@@ -3472,9 +3533,24 @@ nav{
 						padding-right: 1em;
 					}
 
+					
+					.caption{
+						color: white;
+					}
+
 			}
 
 	@media screen and (max-width: 980px) {
+
+		.descript {
+			width: 100%;
+			align-items: stretch;
+			flex-flow: row wrap;
+		}
+
+		#logo{
+			display: none;
+		}
 
 		body {
 			padding-top: 44px;
@@ -3647,7 +3723,7 @@ nav{
 		-ms-justify-content: center;
 		justify-content: center;
 		background-image: url("../../images/back1.png");
-		background-size: 2000px 500px !important;
+		/* background-size: 2000px 500px !important; */
 		background-position: center;
 		background-repeat: no-repeat;
 		-webkit-background-size: cover;
@@ -3710,6 +3786,26 @@ nav{
 		}
 
 		@media screen and (max-width: 736px) {
+			
+			.espec{
+				padding-left: 0px !important;
+				width: 466px !important;
+			}
+
+			.descript {
+				background-color: white;
+				border-radius: 20px;
+				margin-bottom: 45px;
+				border: #f75e5c 2px solid;
+				padding-top: 0px !important;
+    			padding-left: 0px !important;
+				margin-bottom: 45px !important;
+				display: flex;
+				width: 100%;
+				align-items: stretch;
+				flex-flow: row wrap;
+			}
+
 
 			#banner {
 				min-height: 0;
@@ -3811,6 +3907,10 @@ nav{
 
 		@media screen and (max-width: 980px) {
 
+			#banner {
+				background-size: 100% 328px;
+			}
+
 			#footer > .inner {
 				width: 90%;
 			}
@@ -3819,25 +3919,13 @@ nav{
 
 		@media screen and (max-width: 736px) {
 
-			#main {
-				background-image: url('../../images/lockFlex.png');
-				background-position: center;
-				background-size: 1173px 1374px !important;
-				background-repeat: no-repeat;
-			}
-
-			a{
-				color: black !important;
+			#banner {
+				background-size: 100% 128px;
 			}
 
 			a:hover {
-				color: brown !important;
+				color: #f75e5c !important;
 			}
-			
-			#banner {
-				background-size: cover !important;
-			}
-
 
 			#footer {
 				padding: 3em 0 1em 0;
@@ -3847,7 +3935,7 @@ nav{
 
 
 		#logo{
-				height: 105px;
+				height: 272px;
 				border-radius: 15px;
 		}
 		iframe, object, embed {
@@ -3870,4 +3958,39 @@ nav{
 		iframe, object, embed{
 			width: 100%;
 		}
+
+
+	
 		
+		.espec{
+			background: none !important;
+			font-weight: bold !important;
+			padding-left: 15px !important;
+			width: 466px !important;
+		}
+
+		.videos .image{
+			background:  #f75e5c !important;
+			color: white !important;
+		}
+
+		.videos p{
+			background:  #f75e5c !important;
+			color: white !important;
+		}
+
+		
+		 a:hover {
+			color: #f75e5c !important;
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.descript {
+				width: 100% !important;
+			}
+		}
+
+		#menu{
+			color: black;
+		}
