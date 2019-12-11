@@ -2,13 +2,17 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Signika:300,700");
 
+
+
+
+
 /*
 	Broadcast by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 nav{
-	background-image: linear-gradient(to right, #1f1d1d 0%, black 100%);
+	background-color: #f75e5c;
 }
 
 /* Reset */
@@ -27,6 +31,8 @@ nav{
 	}
 
 	body {
+		
+		font-weight: bold;
 		line-height: 1;
 	}
 
@@ -83,6 +89,10 @@ nav{
 
 	.container.\32 5\25 {
 		width: 20em;
+	}
+
+	a{
+		color: black ;
 	}
 
 	.container {
@@ -218,6 +228,25 @@ nav{
 		}
 
 	}
+
+	.descript {
+		background-color: white;
+		border-radius: 20px;
+		margin-bottom: 45px;
+		border: #f75e5c 2px solid;
+		padding-top: 16px !important;
+		padding-left: 24px !important;
+		margin-bottom: 45px !important;
+		display: flex;
+		width: 80%;
+		align-items: stretch;
+		flex-flow: row wrap;
+	}
+
+	.video p {
+		color: black ;
+	}
+
 
 /* Grid */
 
@@ -1571,7 +1600,14 @@ nav{
 	}
 
 	body {
-		background-image: linear-gradient(to right, #1f1d1d 0%, black 100%);
+		/* background-image: url('../../images/back3.jpg'); */
+		background-position: center;
+		background-size: 3091px 2523px !important;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+		
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1587,19 +1623,19 @@ nav{
 
 /* Type */
 
-	body {
-		background-color: #020B13;
-		color: #c0c2c4;
-	}
-
 	body, input, select, textarea {
-		font-family: "Signika", sans-serif;
+		font-family: 'Exo', sans-serif;
 		font-size: 13pt;
 		font-weight: 300;
 		line-height: 1.65;
 	}
 
 		@media screen and (max-width: 1680px) {
+
+			#logo {
+				height: 228px !important;
+			}
+
 
 			body, input, select, textarea {
 				font-size: 11pt;
@@ -1608,6 +1644,11 @@ nav{
 		}
 
 		@media screen and (max-width: 1280px) {
+
+			#logo {
+				height: 282px !important;
+			}
+
 
 			body, input, select, textarea {
 				font-size: 11pt;
@@ -1656,7 +1697,7 @@ nav{
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 0.8em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1787,23 +1828,23 @@ nav{
 	}
 
 	input, select, textarea {
-		color: #ffffff;
+		color: #93302b;
 	}
 
 	a {
-		color: #c1c7cd;
+		color: #93302b;
 	}
 
 		a:hover {
-			color: rgba(193, 199, 205, 0.5);
+			color: #f75e5c;
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #93302b;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #4d110d;
 	}
 
 	blockquote {
@@ -1948,7 +1989,7 @@ nav{
 	button,
 	.button {
 		background-color: #041625;
-		color: #ffffff !important;
+		/* color: #ffffff !important; */
 	}
 
 		input[type="submit"]:hover,
@@ -1974,7 +2015,7 @@ nav{
 		.button.alt {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.15);
-			color: #ffffff !important;
+			color: #93302b !important;
 		}
 
 			input[type="submit"].alt:hover,
@@ -2007,7 +2048,7 @@ nav{
 		button.special,
 		.button.special {
 			background-color: #062038;
-			color: #ffffff !important;
+			color: #93302b !important;
 		}
 
 			input[type="submit"].special:hover,
@@ -2076,7 +2117,7 @@ nav{
 			}
 
 			.flex.flex-tabs .tabs {
-				width: 77%;
+				/* width: 77%; */
 			}
 
 		@media screen and (max-width: 980px) {
@@ -2295,7 +2336,7 @@ nav{
 	}
 
 	label {
-		color: #ffffff;
+		color: #93302b;
 	}
 
 	input[type="text"],
@@ -2317,12 +2358,12 @@ nav{
 		}
 
 	.select-wrapper:before {
-		color: rgba(255, 255, 255, 0.15);
+		color:black;
 	}
 
 	input[type="checkbox"] + label,
 	input[type="radio"] + label {
-		color: #c0c2c4;
+		color: black;
 	}
 
 		input[type="checkbox"] + label:before,
@@ -2335,7 +2376,7 @@ nav{
 	input[type="radio"]:checked + label:before {
 		background-color: #062038;
 		border-color: #062038;
-		color: #ffffff;
+		color: #93302b;
 	}
 
 	input[type="checkbox"]:focus + label:before,
@@ -2349,19 +2390,19 @@ nav{
 	}
 
 	:-moz-placeholder {
-		color: #676d71 !important;
+		color: black !important;
 	}
 
 	::-moz-placeholder {
-		color: #676d71 !important;
+		color: black !important;
 	}
 
 	:-ms-input-placeholder {
-		color: #676d71 !important;
+		color: black !important;
 	}
 
 	.formerize-placeholder {
-		color: #676d71 !important;
+		color: black !important;
 	}
 
 /* Icon */
@@ -2660,7 +2701,7 @@ nav{
 	}
 
 	header p {
-		color: #676d71;
+		color: #93302b;
 	}
 
 /* Tab */
@@ -2812,7 +2853,7 @@ nav{
 
 		.wrapper .inner {
 			margin: 0 auto;
-			width: 80em;
+			width: 53em;
 			position: relative;
 			z-index: 99;
 		}
@@ -2850,7 +2891,7 @@ nav{
 			}
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
-				color: #ffffff;
+				color: #4d110d;
 			}
 
 			.wrapper.style1 blockquote {
@@ -3058,11 +3099,11 @@ nav{
 				}
 
 			.wrapper.style2 strong, .wrapper.style2 b {
-				color: #ffffff;
+				color: #93302b;
 			}
 
 			.wrapper.style2 h1, .wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
-				color: #ffffff;
+				color: #93302b;
 			}
 
 			.wrapper.style2 blockquote {
@@ -3223,10 +3264,10 @@ nav{
 			.wrapper.style2 ul.alt li {
 				border-top-color: rgba(255, 255, 255, 0.15);
 			}
-
+/* 
 			.wrapper.style2 header p {
 				color: #9ba2a8;
-			}
+			} */
 
 			.wrapper.style2 table tbody tr {
 				border-color: rgba(255, 255, 255, 0.15);
@@ -3279,11 +3320,14 @@ nav{
 /* Video */
 
 	.video {
-		background: rgba(255, 255, 255, 0.075);
-		border-radius: 4px;
+		border-radius: 5px;
 		margin: 0 0 2em 0;
 		overflow: hidden;
 		position: relative;
+		opacity: 0.9;
+	}
+	.video:hover {
+		opacity: 1;
 	}
 
 		.video img {
@@ -3340,10 +3384,11 @@ nav{
 				}
 
 		.video .caption {
-			color: #c0c5c9;
+			font-weight: bold !important;
+			color: #93302b;
 			padding: 1.5em;
-			font-size: 1.25em;
-			font-weight: 300;
+			font-size: 1.0em;
+			font-weight: 100;
 			margin: 0;
 		}
 
@@ -3368,7 +3413,6 @@ nav{
 
 	#header {
 		/* background: rgba(4, 22, 37, 0.75); */
-		color: #c0c5c9;
 		cursor: default;
 		height: 3.25em;
 		left: 0;
@@ -3381,7 +3425,6 @@ nav{
 	}
 
 		#header > h1 {
-			color: #ffffff;
 			display: inline-block;
 			height: inherit;
 			left: 1.25em;
@@ -3397,7 +3440,7 @@ nav{
 			}
 
 				#header > h1 a:hover {
-					color: #ffffff;
+					color: #f75e5c;
 				}
 
 			#header > h1 span {
@@ -3417,7 +3460,7 @@ nav{
 		}
 
 			#header > a:hover {
-				color: #ffffff;
+				color: #f75e5c;
 			}
 
 			#header > a[href="#menu"] {
@@ -3451,6 +3494,32 @@ nav{
 
 			@media screen and (max-width: 736px) {
 
+				.video {
+					border-radius: 15px;
+				}
+
+				.video .col{
+					border-radius: 15px;
+				}
+			
+				.videos .image{
+					background:  #f75e5c !important;
+				}
+		
+				.videos p{
+					background:  #f75e5c !important;
+				}
+		
+				.descript {
+					padding-top: 16px !important;
+					padding-left: 0 !important;
+					margin-bottom: 45px !important;
+					display: flex;
+					width: 100%;
+					align-items: stretch;
+					flex-flow: row wrap;
+				}
+
 				#header > a {
 					padding: 0 0.5em;
 				}
@@ -3464,9 +3533,24 @@ nav{
 						padding-right: 1em;
 					}
 
+					
+					.caption{
+						color: white;
+					}
+
 			}
 
 	@media screen and (max-width: 980px) {
+
+		.descript {
+			width: 100%;
+			align-items: stretch;
+			flex-flow: row wrap;
+		}
+
+		#logo{
+			display: none;
+		}
 
 		body {
 			padding-top: 44px;
@@ -3638,13 +3722,15 @@ nav{
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url("../../images/Newbanner.jpg");
+		background-image: url("../../images/back1.png");
+		/* background-size: 2000px 500px !important; */
 		background-position: center;
-		background-size: cover;
 		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
 		border-top: 0;
-		min-height: 525px;
-		/* height: 100vh !important; */
+		height: 500px !important;
 		position: relative;
 		text-align: center;
 		overflow: hidden;
@@ -3670,7 +3756,7 @@ nav{
 		}
 
 		#banner p {
-			color: rgba(255, 255, 255, 0.65);
+			color: black;
 			font-size: 1.5em;
 		}
 
@@ -3700,11 +3786,36 @@ nav{
 		}
 
 		@media screen and (max-width: 736px) {
+			
+			.espec{
+				padding-left: 0px !important;
+				width: 466px !important;
+			}
+
+			.descript {
+				background-color: white;
+				border-radius: 20px;
+				margin-bottom: 45px;
+				border: #f75e5c 2px solid;
+				padding-top: 0px !important;
+    			padding-left: 0px !important;
+				margin-bottom: 45px !important;
+				display: flex;
+				width: 100%;
+				align-items: stretch;
+				flex-flow: row wrap;
+			}
+
 
 			#banner {
 				min-height: 0;
 				height: auto !important;
 				padding: 4em 2em;
+				background-image: url("../../images/back1.png");
+			}
+
+			#imgBanner{
+				display: none;
 			}
 
 				#banner .inner {
@@ -3760,6 +3871,8 @@ nav{
 /* Footer */
 
 	#footer {
+		background-color: #f75e5c;
+		color: white !important;
 		padding: 6em 0 4em 0;
 	}
 
@@ -3767,9 +3880,13 @@ nav{
 			margin: 0 auto;
 			width: 80em;
 		}
+		
+		#footer a:hover {
+			color: white !important;
+		}
 
 		#footer .copyright {
-			color: #676d71;
+			font-weight: bold !important;;
 			font-size: 0.9em;
 			margin: 0 0 2em 0;
 			padding: 0;
@@ -3790,6 +3907,10 @@ nav{
 
 		@media screen and (max-width: 980px) {
 
+			#banner {
+				background-size: 100% 328px;
+			}
+
 			#footer > .inner {
 				width: 90%;
 			}
@@ -3797,6 +3918,14 @@ nav{
 		}
 
 		@media screen and (max-width: 736px) {
+
+			#banner {
+				background-size: 100% 128px;
+			}
+
+			a:hover {
+				color: #f75e5c !important;
+			}
 
 			#footer {
 				padding: 3em 0 1em 0;
@@ -3806,9 +3935,62 @@ nav{
 
 
 		#logo{
-				height: 105px;
+				height: 272px;
 				border-radius: 15px;
 		}
 		iframe, object, embed {
 			max-width: 100%;
+		}
+
+		.wrapper.style2 header p {
+			font-weight: bold;
+			color: 	#963732;
+		}
+
+		.wrapper.style1 a:hover {
+			color: 	#f75e5c
+		}
+
+		p {
+			color: 	#93302b;
+		}
+
+		iframe, object, embed{
+			width: 100%;
+		}
+
+
+	
+		
+		.espec{
+			background: none !important;
+			font-weight: bold !important;
+			padding-left: 15px !important;
+			width: 466px !important;
+		}
+
+		.videos .image{
+			background:  #f75e5c !important;
+			color: white !important;
+		}
+
+		.videos p{
+			background:  #f75e5c !important;
+			color: white !important;
+		}
+
+		
+		 a:hover {
+			color: #f75e5c !important;
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.descript {
+				width: 100% !important;
+			}
+		}
+
+		#menu{
+			color: black;
 		}
