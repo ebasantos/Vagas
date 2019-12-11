@@ -3092,10 +3092,6 @@ nav{
 
 /* Header */
 
-	body.subpage {
-		padding-top: 3.125em;
-	}
-
 	#header {
 		/* background: rgba(4, 22, 37, 0.75); */
 		cursor: default;
@@ -3235,10 +3231,6 @@ nav{
 
 		#logo{
 			display: none;
-		}
-
-		body {
-			padding-top: 44px;
 		}
 
 		#header {
@@ -3677,4 +3669,10 @@ nav{
 		button a:hover{
 			text-decoration-line: none;
 			color: white !important;
+		}
+
+		@media screen and (max-width: 980px){
+			body {
+			    padding-top: 0px;
+			}
 		}
