@@ -3224,13 +3224,17 @@ nav{
 	@media screen and (max-width: 980px) {
 
 		.descript {
-			width: 100%;
 			align-items: stretch;
 			flex-flow: row wrap;
+			width: 76% !important;
 		}
 
-		#logo{
-			display: none;
+		.image.fit img {
+			height: 182px;
+		}
+
+		#logo {
+			height: 164px !important;
 		}
 
 		#header {
@@ -3583,6 +3587,7 @@ nav{
 		@media screen and (max-width: 980px) {
 
 			#banner {
+				background-position: initial;
 				background-size: 100% 328px;
 			}
 
@@ -3593,6 +3598,10 @@ nav{
 		}
 
 		@media screen and (max-width: 736px) {
+
+			.descript {
+				width: 100% !important;
+			}
 
 			#banner {
 				background-size: 100% 128px;
@@ -3657,13 +3666,6 @@ nav{
 		
 		 a:hover {
 			color: #f75e5c !important;
-		}
-
-		@media screen and (max-width: 980px) {
-
-			.descript {
-				width: 100% !important;
-			}
 		}
 
 		button a:hover{
